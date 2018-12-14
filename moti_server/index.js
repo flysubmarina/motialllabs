@@ -22,5 +22,5 @@ app.use('/vector', Vector)
 
 
 server.listen(PORT,()=>{
-    console.log(`Node.JS server works at port = ${PORT}`);
+    console.log(`Node.JS server works at port = ${PORT}`)
 })

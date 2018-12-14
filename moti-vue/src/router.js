@@ -10,7 +10,6 @@ import Lab2 from './views/Lab2.vue'
 import Lab3 from './views/Lab3.vue'
 import Lab4 from './views/Lab4.vue'
 import Lab41 from './views/Lab41.vue'
-import Lab5 from './views/Lab5.vue'
 Vue.use(Router)
 
 export default new Router({
@@ -45,7 +44,9 @@ export default new Router({
     {
       path:'/lab5',
       name: 'lab5',
-      component: Lab5
+      beforeEnter(){
+        location.href = "http://bivisapp.herokuapp.com/"
+      }
     },
     {
       path: '/alternatives',
